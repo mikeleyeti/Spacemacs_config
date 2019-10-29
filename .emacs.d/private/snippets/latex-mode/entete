@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+#name : entete
+#key : entete
+#contributor : MikeLeYeti 
+# --
+\documentclass[10pt,a4paper]{article}
+\usepackage{macro_mike_2020}
+\everymath{\displaystyle}
+\pagestyle{empty}
+\setlength{\parindent}{0cm}  %indentation des paragraphes
+\setlength{\baselineskip}{1.0\baselineskip}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

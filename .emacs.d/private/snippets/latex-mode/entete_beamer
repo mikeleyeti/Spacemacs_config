@@ -1,0 +1,43 @@
+# -*- mode: snippet -*-
+#name : entete_beamer
+#key : entete_beamer
+#contributor :MikeLeYeti
+# --
+\documentclass[]{beamer}
+\usepackage{macro_mike_2020_beamer}
+\everymath{\displaystyle}
+%\pagestyle{fancy}
+\setlength{\parindent}{0cm}  %indentation des paragraphes
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+\metroset{block=fill} % Pour des blocks avec un fond
+\setbeamercovered{transparent}
+
+
+
+\usepackage{amsthm}
+%\theoremstyle{definition}
+\newtheorem{propriete}{Propriété}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Chapitre $1 }
+\subtitle{Classe de $2}
+\author[]{M. LE MENTEC}
+\date{$3}
+\institute[]{$4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+$0
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

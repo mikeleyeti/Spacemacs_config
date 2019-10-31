@@ -360,6 +360,17 @@ you should place your code here."
 		'(progn
 		(assq-delete-all 'output-pdf TeX-view-program-selection)
 		(add-to-list 'TeX-view-program-selection '(output-pdf "Sumatra PDF"))))
+;; Ajoute le shell escape
+  (eval-after-load "tex"
+    '(progn
+       (add-to-list
+        'TeX-engine-alist
+        '(default-shell-escape "Default with shell escape"
+           "pdftex -shell-escape"
+           "pdflatex -shell-escape"
+           ConTeXt-engine))
+       (setq-default TeX-engine 'default-shell-escape)
+       ))
 ;;(setq ispell-list-command "list")
 ;;(setq ispell-extra-args '("--dont-tex-check-comments"))
 (add-hook 'doc-view-mode-hook 'auto-revert-mode)
